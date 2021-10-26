@@ -18,8 +18,8 @@ class ResultPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Center(
-          child: Text("BMI Calculator"),
+        title: Text(
+          "BMI Calculator",
         ),
       ),
       body: Column(
@@ -29,11 +29,13 @@ class ResultPage extends StatelessWidget {
           Expanded(
             child: Container(
               margin: EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 10.0),
-              child: Text(
-                "Your Result",
-                style: kNumberTextStyle.copyWith(
-                    fontSize: 30.0, fontWeight: FontWeight.w700),
-                textAlign: TextAlign.left,
+              child: Center(
+                child: Text(
+                  "Your Result",
+                  style: kNumberTextStyle.copyWith(
+                      fontSize: 30.0, fontWeight: FontWeight.w700),
+                  textAlign: TextAlign.left,
+                ),
               ),
             ),
           ),
